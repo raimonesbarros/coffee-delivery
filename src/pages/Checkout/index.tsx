@@ -1,4 +1,4 @@
-import { FormToDelivery } from "./components/Address";
+import { FormToDelivery } from "./components/DeliveryForm";
 import { OrderCard } from "./components/OrderCard";
 import {
   CheckoutContainer,
