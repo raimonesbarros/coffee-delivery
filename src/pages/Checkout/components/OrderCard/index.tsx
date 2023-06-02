@@ -71,7 +71,7 @@ export function OrderCard() {
           <strong>R$ {cart.length > 0 ? getTotalValue() : "0,00"}</strong>
         </p>
       </OrderCardTotal>
-      <NavLink className="link" to={"/success"}></NavLink>
+      {/* <NavLink className="link" to={"/success"}></NavLink> */}
       <button
         form="formDelivery"
         disabled={submitting || orderNotExist}
