@@ -1,4 +1,4 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { coffeeList } from "../../../../data";
 import { CoffeeCard, CoffeeCardType } from "../CoffeeCard";
 import { v4 as uuidv4 } from "uuid";
