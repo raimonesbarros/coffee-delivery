@@ -73,10 +73,11 @@ export function CoffeeCard({
     mochaccino
   ]
 
+  console.log(imports[img])
 
   return (
     <CoffeeCardContainer>
-      <img src={imports[img]} />
+      <img src={'/src/assets/coffee/Americano.svg'} />
       <CoffeeCardTags>
         {tags?.map((tag) => {
           const id = uuidv4();
