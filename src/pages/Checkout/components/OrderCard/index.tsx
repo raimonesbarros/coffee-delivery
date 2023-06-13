@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { OrderContext } from "../../../../contexts/OrderContext";
-import { NavLink } from "react-router-dom";
 import { Order } from "./Order";
 import { OrderCardContainer, OrderCardTotal } from "./styles";
 import { v4 as uuidv4 } from "uuid";
