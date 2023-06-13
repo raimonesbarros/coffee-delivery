@@ -1,41 +1,41 @@
 export const coffeeList = [
   {
-    img: "expresso",
+    img: 0,
     tags: ["Tradicional"],
     name: "Expresso Tradicional",
     description: "O tradicional café feito com água quente e grãos moídos",
     price: 9.9,
   },
   {
-    img: "americano",
+    img: 1,
     tags: ["Tradicional"],
     name: "Expresso Americano",
     description: "Expresso diluído, menos intenso que o tradicional",
     price: 9.9,
   },
   {
-    img: "expressoCremoso",
+    img: 2,
     tags: ["Tradicional"],
     name: "Expresso Cremoso",
     description: "Café expresso tradicional com espuma cremosa",
     price: 9.9,
   },
   {
-    img: "cafeGelado",
+    img: 3,
     tags: ["Tradicional", "Gelado"],
     name: "Expresso Gelado",
     description: "Bebida preparada com café expresso e cubos de gelo",
     price: 9.9,
   },
   {
-    img: "cafeComLeite",
+    img: 4,
     tags: ["Tradicional", "Com leite"],
     name: "Café com Leite",
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     price: 9.9,
   },
   {
-    img: "latte",
+    img: 5,
     tags: ["Tradicional", "Com Leite"],
     name: "Latte",
     description:
@@ -43,7 +43,7 @@ export const coffeeList = [
     price: 9.9,
   },
   {
-    img: "capuccino",
+    img: 6,
     tags: ["Tradicional", "Com Leite"],
     name: "Capuccino",
     description:
@@ -51,7 +51,7 @@ export const coffeeList = [
     price: 9.9,
   },
   {
-    img: "macchiato",
+    img: 7,
     tags: ["Tradicional", "Com Leite"],
     name: "Macchiato",
     description:
@@ -59,21 +59,21 @@ export const coffeeList = [
     price: 9.9,
   },
   {
-    img: "mochaccino",
+    img: 8,
     tags: ["Tradicional", "Com Leite"],
     name: "Mocaccino",
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
     price: 9.9,
   },
   {
-    img: "chocolateQuente",
+    img: 9,
     tags: ["Especial", "Com Leite"],
     name: "Chocolate Quente",
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
     price: 9.9,
   },
   {
-    img: "cubano",
+    img: 10,
     tags: ["Especial", "Alcoólico", "Gelado"],
     name: "Cubano",
     description:
@@ -81,21 +81,21 @@ export const coffeeList = [
     price: 9.9,
   },
   {
-    img: "havaiano",
+    img: 11,
     tags: ["Especial"],
     name: "Havaiano",
     description: "Bebida adocicada preparada com café e leite de coco",
     price: 9.9,
   },
   {
-    img: "arabe",
+    img: 12,
     tags: ["Especial"],
     name: "Árabe",
     description: "Bebida preparada com grãos de café árabe e especiarias",
     price: 9.9,
   },
   {
-    img: "irlandes",
+    img: 13,
     tags: ["Especial", "Alcoólico"],
     name: "Irlandês",
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",

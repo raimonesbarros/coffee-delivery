@@ -24,7 +24,7 @@ import {
 } from "./styles";
 
 export interface CoffeeCardType {
-  img: string;
+  img: number;
   tags?: string[];
   name: string;
   description?: string;
@@ -56,22 +56,22 @@ export function CoffeeCard({
     addToCart(name, qtty);
   }
 
-  const imports = {
-    'americano': americano,
-    'arabe': arabe,
-    'cafeComLeite': cafeComLeite,
-    'cafeGelado': cafeGelado,
-    'capuccino': capuccino,
-    'chocolateQuente': chocolateQuente,
-    'cubano': cubano,
-    'expressoCremoso': expressoCremoso,
-    'expresso': expresso,
-    'havaiano': havaiano,
-    'irlandes': irlandes,
-    'latte': latte,
-    'macchiato': macchiato,
-    'mochaccino': mochaccino
-  } as const
+  const imports = [
+    americano,
+    arabe,
+    cafeComLeite,
+    cafeGelado,
+    capuccino,
+    chocolateQuente,
+    cubano,
+    expressoCremoso,
+    expresso,
+    havaiano,
+    irlandes,
+    latte,
+    macchiato,
+    mochaccino
+  ]
 
 
   return (
