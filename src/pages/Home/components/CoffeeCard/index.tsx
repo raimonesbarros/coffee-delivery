@@ -2,20 +2,6 @@ import { useState, useContext } from "react";
 import { OrderContext } from "../../../../contexts/OrderContext";
 import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 import { v4 as uuidv4 } from "uuid";
-import americano from '../../../../assets/coffee/Americano.svg'
-import arabe from '../../../../assets/coffee/Árabe.svg'
-import cafeComLeite from '../../../../assets/coffee/Café com Leite.svg'
-import cafeGelado from '../../../../assets/coffee/Café Gelado.svg'
-import capuccino from '../../../../assets/coffee/Capuccino.svg'
-import chocolateQuente from '../../../../assets/coffee/Chocolate Quente.svg'
-import cubano from '../../../../assets/coffee/Cubano.svg'
-import expressoCremoso from '../../../../assets/coffee/Expresso Cremoso.svg'
-import expresso from '../../../../assets/coffee/Expresso.svg'
-import havaiano from '../../../../assets/coffee/Havaiano.svg'
-import irlandes from '../../../../assets/coffee/Irlandês.svg'
-import latte from '../../../../assets/coffee/Latte.svg'
-import macchiato from '../../../../assets/coffee/Macchiato.svg'
-import mochaccino from '../../../../assets/coffee/Mochaccino.svg'
 import {
   CoffeeCardContainer,
   CoffeeCardTags,
@@ -24,7 +10,7 @@ import {
 } from "./styles";
 
 export interface CoffeeCardType {
-  img: number;
+  img?: string;
   tags?: string[];
   name: string;
   description?: string;
@@ -56,28 +42,9 @@ export function CoffeeCard({
     addToCart(name, qtty);
   }
 
-  const imports = [
-    americano,
-    arabe,
-    cafeComLeite,
-    cafeGelado,
-    capuccino,
-    chocolateQuente,
-    cubano,
-    expressoCremoso,
-    expresso,
-    havaiano,
-    irlandes,
-    latte,
-    macchiato,
-    mochaccino
-  ]
-
-  console.log(imports[img])
-
   return (
     <CoffeeCardContainer>
-      <img src={'/src/assets/coffee/Americano.svg'} />
+      <img src={img} />
       <CoffeeCardTags>
         {tags?.map((tag) => {
           const id = uuidv4();
