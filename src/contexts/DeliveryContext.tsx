@@ -10,6 +10,7 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import { OrderContext } from "./OrderContext";
+import { useNavigate } from "react-router-dom";
 
 interface DeliveryContextProps {
   children: ReactNode;
@@ -49,7 +50,8 @@ interface DeliveryContextType {
 export const DeliveryContext = createContext({} as DeliveryContextType);
 
 export function DeliveryContextProvider({ children }: DeliveryContextProps) {
-  const { cart } = useContext(OrderContext);
+  const { cart, setCart } = useContext(OrderContext);
+  const navigate = useNavigate()
   const {
     register,
     handleSubmit,
@@ -67,7 +69,8 @@ export function DeliveryContextProvider({ children }: DeliveryContextProps) {
   function handleConfirmOrder(data: SubmitHandler<FieldValues>) {
     localStorage.setItem("@coffeeDelivery1.0.0", JSON.stringify(data));
     reset();
-    window.location.href = "http://raimones-coffee-delivery.vercel.app/success"
+    setCart([])
+    navigate('/success')
   }
 
   return (

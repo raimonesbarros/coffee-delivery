@@ -59,9 +59,9 @@ export function OrderCard() {
             R${" "}
             {cart.length > 0
               ? deliveryValue.toLocaleString("pt-BR", {
-                  style: "decimal",
-                  minimumFractionDigits: 2,
-                })
+                style: "decimal",
+                minimumFractionDigits: 2,
+              })
               : "0,00"}
           </span>
         </p>
@@ -70,7 +70,6 @@ export function OrderCard() {
           <strong>R$ {cart.length > 0 ? getTotalValue() : "0,00"}</strong>
         </p>
       </OrderCardTotal>
-      {/* <NavLink className="link" to={"/success"}></NavLink> */}
       <button
         form="formDelivery"
         disabled={submitting || orderNotExist}
