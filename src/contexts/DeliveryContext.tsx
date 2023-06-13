@@ -65,9 +65,13 @@ export function DeliveryContextProvider({ children }: DeliveryContextProps) {
   const formStateError = errors;
 
   function handleConfirmOrder(data: SubmitHandler<FieldValues>) {
-    localStorage.setItem("@coffeeDelivery1.0.0", JSON.stringify(data));
+    //localStorage.setItem("@coffeeDelivery1.0.0", JSON.stringify(data));
     reset();
-    window.location.href = "http://localhost:5173/success";
+    
+    //window.location.href = "http://localhost:5173/success";
+    
+    return <Link to={"/success"}>
+
   }
 
   return (
