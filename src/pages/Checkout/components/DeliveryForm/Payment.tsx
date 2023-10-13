@@ -1,7 +1,7 @@
 import { Bank, CreditCard, CurrencyDollar, Money } from "@phosphor-icons/react";
-import { FormOfPaymentContainer, PaymentTypeSelect } from "./Payment.styles";
 import { useContext } from "react";
 import { DeliveryContext } from "../../../../contexts/DeliveryContext";
+import { FormOfPaymentContainer, PaymentTypeSelect } from "./Payment.styles";
 
 export function PaymentForm() {
   const { formStateError, orderNotExist, register } =
@@ -50,9 +50,10 @@ export function PaymentForm() {
               {...register("payment")}
             />
           </label>
-          <span>
-            {formStateError.payment && String(formStateError.payment?.message)}
-          </span>
+
+          {formStateError.payment && (
+            <span>{String(formStateError.payment?.message)}</span>
+          )}
         </label>
       </PaymentTypeSelect>
     </FormOfPaymentContainer>
